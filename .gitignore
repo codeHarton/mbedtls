@@ -21,5 +21,13 @@ massif-*
 *.ilk
 *.lib
 
+visualc/vs2015/x64/
+visualc/vs2015/Release/
+visualc/vs2015/Debug/
+visualc/vs2015/.vs/
+*.vcxproj.user
+*.VC.opendb
+*.sdf
+
 # CMake generates *.dir/ folders for in-tree builds (used by MSVC projects), ignore all of those:
 *.dir/
