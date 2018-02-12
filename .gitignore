@@ -21,6 +21,9 @@ massif-*
 *.ilk
 *.lib
 
+ios/mbedtls.xcodeproj/project.xcworkspace/
+ios/mbedtls.xcodeproj/xcuserdata/
+
 visualc/vs2015/x64/
 visualc/vs2015/Release/
 visualc/vs2015/Debug/
