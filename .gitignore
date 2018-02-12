@@ -23,6 +23,8 @@ massif-*
 
 ios/mbedtls.xcodeproj/project.xcworkspace/
 ios/mbedtls.xcodeproj/xcuserdata/
+ios/mbedtls-demo.xcodeproj/project.xcworkspace/
+ios/mbedtls-demo.xcodeproj/xcuserdata/
 
 visualc/vs2015/x64/
 visualc/vs2015/Release/
