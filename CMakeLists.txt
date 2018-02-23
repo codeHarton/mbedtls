@@ -164,3 +164,5 @@ if(ENABLE_TESTING)
         )
     endif(UNIX)
 endif()
+
+set(MBEDTLS_ROOT_DIR ${CMAKE_CURRENT_SOURCE_DIR} CACHE INTERNAL "mbedTLS library root directory" FORCE)
