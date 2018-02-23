@@ -12,7 +12,7 @@ option(UNSAFE_BUILD "Allow unsafe builds. These builds ARE NOT SECURE." OFF)
 if(MSVC)
     option(ENABLE_TESTING "Build mbed TLS tests." OFF)
 else()
-    option(ENABLE_TESTING "Build mbed TLS tests." ON)
+    option(ENABLE_TESTING "Build mbed TLS tests." OFF)
 endif()
 
 # Warning string - created as a list for compatibility with CMake 2.8
