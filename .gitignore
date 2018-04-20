@@ -23,6 +23,7 @@ massif-*
 *.pdb
 *.ilk
 *.lib
+*.suo
 
 *.xcworkspace
 xcuserdata
