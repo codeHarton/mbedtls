@@ -210,7 +210,7 @@ int mbedtls_platform_win32_snprintf( char *s, size_t n, const char *fmt, ... );
 #endif
 
 #if defined(MBEDTLS_PLATFORM_SNPRINTF_ALT)
-extern int (*mbedtls_snprintf)( char * s, size_t n, const char * format, ... );
+MBEDTLS_API extern int (*mbedtls_snprintf)( char * s, size_t n, const char * format, ... );
 
 /**
  * \brief                 This function allows configuring a custom

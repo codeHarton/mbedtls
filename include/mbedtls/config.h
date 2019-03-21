@@ -33,6 +33,16 @@
 #define _CRT_SECURE_NO_DEPRECATE 1
 #endif
 
+#if defined(_WIN32)
+#ifdef MBEDTLS_EXPORTS
+#define MBEDTLS_API __declspec(dllexport)
+#else
+#define MBEDTLS_API __declspec(dllimport)
+#endif
+#else
+#define MBEDTLS_API
+#endif
+
 /**
  * \name SECTION: System support
  *

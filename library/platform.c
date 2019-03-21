@@ -127,7 +127,7 @@ static int platform_snprintf_uninit( char * s, size_t n,
 #define MBEDTLS_PLATFORM_STD_SNPRINTF    platform_snprintf_uninit
 #endif /* !MBEDTLS_PLATFORM_STD_SNPRINTF */
 
-int (*mbedtls_snprintf)( char * s, size_t n,
+MBEDTLS_API int (*mbedtls_snprintf)( char * s, size_t n,
                           const char * format,
                           ... ) = MBEDTLS_PLATFORM_STD_SNPRINTF;
 
