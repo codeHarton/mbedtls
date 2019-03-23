@@ -28,6 +28,8 @@ FOUNDATION_EXPORT const unsigned char mbedtlsVersionString[];
 #import <mbedtls/camellia.h>
 #import <mbedtls/ccm.h>
 #import <mbedtls/certs.h>
+#import <mbedtls/chacha20.h>
+#import <mbedtls/chachapoly.h>
 #import <mbedtls/check_config.h>
 #import <mbedtls/cipher.h>
 #import <mbedtls/cipher_internal.h>
@@ -48,6 +50,7 @@ FOUNDATION_EXPORT const unsigned char mbedtlsVersionString[];
 #import <mbedtls/error.h>
 #import <mbedtls/gcm.h>
 #import <mbedtls/havege.h>
+#import <mbedtls/hkdf.h>
 #import <mbedtls/hmac_drbg.h>
 #import <mbedtls/md.h>
 #import <mbedtls/md2.h>
@@ -66,7 +69,9 @@ FOUNDATION_EXPORT const unsigned char mbedtlsVersionString[];
 #import <mbedtls/pkcs12.h>
 #import <mbedtls/pkcs5.h>
 #import <mbedtls/platform.h>
+#import <mbedtls/platform_util.h>
 #import <mbedtls/platform_time.h>
+#import <mbedtls/poly1305.h>
 #import <mbedtls/ripemd160.h>
 #import <mbedtls/rsa.h>
 #import <mbedtls/rsa_internal.h>
