@@ -94,7 +94,7 @@ typedef struct {
 /*
  * Default profile
  */
-const mbedtls_x509_crt_profile mbedtls_x509_crt_profile_default =
+MBEDTLS_API const mbedtls_x509_crt_profile mbedtls_x509_crt_profile_default =
 {
 #if defined(MBEDTLS_TLS_DEFAULT_ALLOW_SHA1_IN_CERTIFICATES)
     /* Allow SHA-1 (weak, but still safe in controlled environments) */
@@ -113,7 +113,7 @@ const mbedtls_x509_crt_profile mbedtls_x509_crt_profile_default =
 /*
  * Next-default profile
  */
-const mbedtls_x509_crt_profile mbedtls_x509_crt_profile_next =
+MBEDTLS_API const mbedtls_x509_crt_profile mbedtls_x509_crt_profile_next =
 {
     /* Hashes from SHA-256 and above */
     MBEDTLS_X509_ID_FLAG( MBEDTLS_MD_SHA256 ) |
@@ -138,7 +138,7 @@ const mbedtls_x509_crt_profile mbedtls_x509_crt_profile_next =
 /*
  * NSA Suite B Profile
  */
-const mbedtls_x509_crt_profile mbedtls_x509_crt_profile_suiteb =
+MBEDTLS_API const mbedtls_x509_crt_profile mbedtls_x509_crt_profile_suiteb =
 {
     /* Only SHA-256 and 384 */
     MBEDTLS_X509_ID_FLAG( MBEDTLS_MD_SHA256 ) |

@@ -205,18 +205,18 @@ typedef void mbedtls_x509_crt_restart_ctx;
  * Default security profile. Should provide a good balance between security
  * and compatibility with current deployments.
  */
-extern const mbedtls_x509_crt_profile mbedtls_x509_crt_profile_default;
+MBEDTLS_API extern const mbedtls_x509_crt_profile mbedtls_x509_crt_profile_default;
 
 /**
  * Expected next default profile. Recommended for new deployments.
  * Currently targets a 128-bit security level, except for RSA-2048.
  */
-extern const mbedtls_x509_crt_profile mbedtls_x509_crt_profile_next;
+MBEDTLS_API extern const mbedtls_x509_crt_profile mbedtls_x509_crt_profile_next;
 
 /**
  * NSA Suite B profile.
  */
-extern const mbedtls_x509_crt_profile mbedtls_x509_crt_profile_suiteb;
+MBEDTLS_API extern const mbedtls_x509_crt_profile mbedtls_x509_crt_profile_suiteb;
 
 /**
  * \brief          Parse a single DER formatted certificate and add it
