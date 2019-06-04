@@ -590,6 +590,9 @@ mbedtls_sha1_finish_ret
 mbedtls_internal_sha1_process
 mbedtls_sha1_ret
 mbedtls_sha1_self_test
+mbedtls_sha1_starts
+mbedtls_sha1_update
+mbedtls_sha1_finish
 
 mbedtls_hmac_drbg_init
 mbedtls_hmac_drbg_seed
