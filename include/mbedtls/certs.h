@@ -70,8 +70,8 @@ MBEDTLS_API extern const char * mbedtls_test_cas[];
 MBEDTLS_API extern const size_t mbedtls_test_cas_len[];
 
 /* List of all DER-encoded CA certificates, terminated by NULL */
-extern const unsigned char * mbedtls_test_cas_der[];
-extern const size_t mbedtls_test_cas_der_len[];
+MBEDTLS_API extern const unsigned char* mbedtls_test_cas_der[];
+MBEDTLS_API extern const size_t mbedtls_test_cas_der_len[];
 
 #if defined(MBEDTLS_PEM_PARSE_C)
 /* Concatenation of all CA certificates in PEM format if available */
