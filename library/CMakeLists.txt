@@ -2,6 +2,10 @@ option(USE_STATIC_MBEDTLS_LIBRARY "Build mbed TLS static library." ON)
 option(USE_SHARED_MBEDTLS_LIBRARY "Build mbed TLS shared library." OFF)
 option(LINK_WITH_PTHREAD "Explicitly link mbed TLS library to pthread." OFF)
 
+if (USE_STATIC_MBEDTLS_LIBRARY)
+    add_definitions("-DUSE_STATIC_MBEDTLS_LIBRARY")
+endif()
+
 set(src_crypto
     aes.c
     aesni.c

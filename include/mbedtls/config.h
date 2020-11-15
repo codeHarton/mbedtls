@@ -61,11 +61,15 @@
 #endif
 
 #if defined(_WIN32)
+#if defined(USE_STATIC_MBEDTLS_LIBRARY)
+#define MBEDTLS_API
+#else
 #ifdef MBEDTLS_EXPORTS
 #define MBEDTLS_API __declspec(dllexport)
 #else
 #define MBEDTLS_API __declspec(dllimport)
 #endif
+#endif // defined(USE_STATIC_MBEDTLS_LIBRARY)
 #else
 #define MBEDTLS_API
 #endif
